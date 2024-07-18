@@ -1,0 +1,93 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Hello React</title><link rel="stylesheet" href="App.css"/><script defer="defer" src="/static/js/main.2e51308b.js"></script><link href="/static/css/main.e6c13ad2.css" rel="stylesheet"></head><body><div id="root"></div><script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script><script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script><script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script><script type="text/babel">ReactDOM.render(
+        <React.Fragment>
+          <Card />
+          <div class="container">
+          <div class="no">
+          <Block   image="swimming.png" rate="5.0" man="6" money="136" text="Life lessons with Katie Zaferes
+          "/>
+          <Block image="wedding.png" rate="5.0" man="30" money="125" text="Learn wedding photography
+          "/>
+          <Block  image="mountain-bike.png" rate="4.8" man="2" money="50" text="Group Mountain Biking"/>
+          </div>
+          </div>
+        </React.Fragment>,
+        document.getElementById("root")
+      );
+
+      function Header() {
+        return (
+          <header>
+            <div class="container">
+              <a href="#">
+                <img src="Froup 83.png" alt="" />
+              </a>
+            </div>
+          </header>
+        );
+      }
+
+      function Hero() {
+        return (
+          <section id="hero-section">
+            <div class="container">
+              <h1>Fun facts about React</h1>
+              <ul>
+                <li>
+                  <span>Was first released in 2013</span>
+                </li>
+                <li>
+                  <span>Was originally created by Jordan Walke</span>
+                </li>
+                <li>
+                  <span>Has well over 100K stars on GitHub</span>
+                </li>
+                <li>
+                  <span>Is maintained by Facebook</span>
+                </li>
+                <li>
+                  <span>
+                    Powers thousands of enterprise apps, including mobile appsk
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </section>
+        );
+      }
+      function Card(props) {
+        console.log(props);
+        return (
+          <div className="contact-card">
+            <nav className="ho">
+              <a>
+                <img src="airbnb 1.png"></img>
+              </a>
+            </nav>
+            <div className="image"></div>
+            <div className="container">
+              
+              <div class="text">
+                <h2>Online Experiences</h2>
+                <p>
+                  Join unique interactive activities led by one-of-a-kind
+                  hosts—all without leaving home.
+                </p>
+              </div>
+            </div>
+          </div>
+        );
+      }
+      function Block(props) {
+        return (
+          <div className="block">
+            <img class="do" src={props.image}></img><br></br>
+            <img src="star.png" alt=""/>
+            <span>{props.rate}</span> (<span>{props.man}</span>) .{" "}
+            <span>USA</span>
+            <br></br>
+            <p>{props.text}</p>
+            <br></br>
+            <b>From ${props.money}</b>/person
+          </div>
+        );
+      }</script></body></html>

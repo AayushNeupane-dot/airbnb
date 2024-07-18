@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .ho {
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  }
+  .container{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .image {
+    margin: 10px;
+    width: 1350px;
+    height: 500px;
+    background-image: url("Group 77.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .no{
+    display: flex;
+    justify-content: center;
+align-items: center;
+  }
+.block{
+
+margin-right: 7px;
+}
+.do{
+    width: 264px;
+height: 353px;
+top: 521px;
+left: 231px;
+gap: 0px;
+border-radius: 9px 0px 0px 0px;
+opacity: 0px;
+
+}
+.text h2{
+    width: 347px;
+    height: 40px;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 39.6px;
+    text-align: left;
+    }
+    .text p{
+        font-family: Poppins;
+font-size: 16px;
+font-weight: 300;
+line-height: 17.6px;
+text-align: left;
+
+    }
